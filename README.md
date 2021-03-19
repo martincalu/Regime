@@ -6,8 +6,6 @@
 * [Technologies](#technologies)
 * [Features](#features)
 * [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
 
 ## General info
 It's a little program made to calculate the nutritional macros during a certain period of time. I made it originally for myself to exercise and then I added some features to fit in a Codecademy portfolio project.
@@ -19,11 +17,11 @@ It's a little program made to calculate the nutritional macros during a certain 
 * Recipes come from tasty.co
 
 ## Features
-List of features :
+#### List of features :
 * Calculates the amount of the macro you choose on a given day and in a given meal
 * Prints a table with the whole regime for the week 
 
-To-do list:
+#### To-do list:
 * To add some recipes and aliments (there are currently 2 full recipes)
 
 ## Status
