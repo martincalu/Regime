@@ -43,36 +43,56 @@ def ajouter_aliment(jour, repas, aliment, quantité):
     aliments.append(infos_aliment)
 
 #region Aliments
-yaourt_grecque = Aliment("Boni Selection Yaourt à la Grecque entier nature 10 % m.g. 1 kg", '''
-    Énergie kcal121 kcal
-    Total graisses10 g
-    Graisses saturées6.2 g
-    Total glucides4.3 g
-    Sucres3.6 g
-    Fibres alimentaires0 g
-    Protéines3.5 g
-    Sel0.1 g    ''')
 
-vermicelles_chocolat = Aliment("Boni Selection Vermicelles chocolat noir 600 g", '''
-    Énergie kcal446 kcal
-    Total graisses15 g
-    Graisses saturées9 g
-    Total glucides69 g
-    Sucres66 g
-    Fibres alimentaires6.3 g
-    Protéines4.8 g
-    Sel0.35 g
-    ''')
+# Féculents
+chapelure = Aliment('Everyday Chapelure 400 g', '''Énergie kcal349 kcal
+    Total graisses1.7 g
+    Graisses saturées0.2 g
+    Total glucides69.6 g
+    Sucres3.8 g
+    Fibres alimentaires4.7 g
+    Protéines11.5 g
+    Sel1 g''')
 
-kelloggs = Aliment("Kellogg's EXTRA Milk Chocolate 500g", '''Énergie kcal484 kcal
-    Total graisses22 g
-    Graisses saturées12 g
-    Total glucides62 g
-    Sucres25 g
-    Fibres alimentaires4.9 g
-    Protéines7 g
-    Sel0.68 g''')
+farine = Aliment('Everyday Farine de blé pour préparations variées 1 kg', '''Énergie kcal348 kcal
+    Total graisses1.1 g
+    Graisses saturées0.2 g
+    Total glucides72 g
+    Sucres1.1 g
+    Fibres alimentaires3.5 g
+    Protéines11 g
+    Sel< 0.01 g''')
 
+patate_douce = Aliment('BONI patate douce (vrac)', '''Énergie kcal86 kcal
+    Total graisses0.1 g
+    Graisses saturées0 g
+    Total glucides20 g
+    Sucres4.2 g
+    Fibres alimentaires3 g
+    Protéines1.6 g
+    Sel0 g ''')
+
+pâtes = Aliment('Boni Selection Farfalle 500 g', '''Énergie kcal370 kcal
+    Total graisses1.5 g
+    Graisses saturées0.3 g
+    Total glucides75 g
+    Sucres3 g
+    Fibres alimentaires3 g
+    Protéines13 g
+    Sel0.03 g''')
+
+riz = Aliment('Boni Selection Riz basmati parfumé - ne colle pas 4 sachets-cuisson 500 g', '''Énergie kcal349 kcal
+    Total graisses0.8 g
+    Graisses saturées0.2 g
+    Total glucides77 g
+    Sucres< 0.5 g
+    Fibres alimentaires1.1 g
+    Protéines5 g
+    Sel0.03 g ''')
+
+
+
+# Fruits et légumes
 amandes = Aliment("Boni Selection Amandes 250 g", '''Énergie kcal592 kcal
     Total graisses49 g
     Graisses saturées3.7 g
@@ -81,6 +101,43 @@ amandes = Aliment("Boni Selection Amandes 250 g", '''Énergie kcal592 kcal
     Fibres alimentaires12 g
     Protéines21 g
     Sel< 0.01 g''')
+
+avocat = Aliment('Boni Selection Avocats 5 pièces ± 750 g', '''Énergie kcal160 kcal
+    Total graisses15 g
+    Graisses saturées2.1 g
+    Total glucides9 g
+    Sucres0.7 g
+    Fibres alimentaires7 g
+    Protéines2 g
+    Sel0 g ''')
+
+champignons = Aliment('Boni Selection - Champignons - 100 pourcents culture belge - 300 g', '''
+    Énergie kcal19 kcal
+    Total graisses0.4 g
+    Graisses saturées0 g
+    Total glucides0.6 g
+    Sucres0 g
+    Fibres alimentaires2.1 g
+    Protéines2.2 g
+    Sel0.01 g ''')
+
+lait_coco = Aliment('Boni Selection Lait de coco 400 ml', '''Énergie kcal167 kcal
+    Total graisses18 g
+    Graisses saturées16 g
+    Total glucides1.8 g
+    Sucres1.8 g
+    Fibres alimentaires0 g
+    Protéines0 g
+    Sel0.08 g''')
+
+oignons = Aliment('Boni Selection Oignons 2,5 kg', '''Énergie kcal40 kcal
+    Total graisses0.1 g
+    Graisses saturées< 0 g
+    Total glucides9 g
+    Sucres4.2 g
+    Fibres alimentaires1.7 g
+    Protéines1.1 g
+    Sel0 g''')
 
 noix = Aliment("Boni Selection Cerneaux de noix 200 g", '''Énergie kcal689 kcal
     Total graisses65 g
@@ -100,25 +157,27 @@ noix_de_pécan = Aliment("Boni Selection Noix de pécan grillées 200 g", '''Én
     Protéines9.5 g
     Sel< 0.01 g''')
 
-whey = Aliment("Decathlon WHEY PROTEINE ISOLATE CHOCO 900G", '''Énergie kcal377 kcal
-    Total graisses3.8 g
-    Graisses saturées2.2 g
-    Total glucides5 g
-    Sucres3.3 g
-    Fibres alimentaires1.3 g
-    Protéines80 g
-    Sel1.1 g''')
-
-champignons = Aliment('Boni Selection - Champignons - 100 pourcents culture belge - 300 g', '''
-    Énergie kcal19 kcal
-    Total graisses0.4 g
+sauce_tomate = Aliment('Base tomatée pour pizza Elvea Tetra 250g', '''Énergie kcal36 kcal
+    Total graisses0.2 g
     Graisses saturées0 g
-    Total glucides0.6 g
-    Sucres0 g
-    Fibres alimentaires2.1 g
-    Protéines2.2 g
-    Sel0.01 g ''')
+    Total glucides5.2 g
+    Sucres4.5 g
+    Fibres alimentaires3 g
+    Protéines1.9 g
+    Sel0.38 g''')
 
+tomates_en_morceaux = Aliment('Boni Selection Tomates concassées 400 g', '''Énergie kcal33 kcal
+    Total graisses0 g
+    Graisses saturées0 g
+    Total glucides5.3 g
+    Sucres4.3 g
+    Fibres alimentaires2.1 g
+    Protéines1.9 g
+    Sel0.02 g''')
+
+
+
+# Légumineuses
 haricots_blancs = Aliment('Boni Selection Haricots blancs 400 g', '''Énergie kcal100 kcal
     Total graisses0.8 g
     Graisses saturées< 0.1 g
@@ -137,50 +196,48 @@ haricots_noirs = Aliment('Boni Selection Haricots noirs 200 g', '''Énergie kcal
     Protéines8 g
     Sel0.3 g''')
 
-oignons = Aliment('Boni Selection Oignons 2,5 kg', '''Énergie kcal40 kcal
-    Total graisses0.1 g
-    Graisses saturées< 0 g
-    Total glucides9 g
-    Sucres4.2 g
-    Fibres alimentaires1.7 g
-    Protéines1.1 g
-    Sel0 g''')
-
-chapelure = Aliment('Everyday Chapelure 400 g', '''Énergie kcal349 kcal
-    Total graisses1.7 g
+pois_chiches = Aliment('BIOITALIA Pois chiches biologiques', ''' Énergie kcal163 kcal
+    Total graisses2 g
     Graisses saturées0.2 g
-    Total glucides69.6 g
-    Sucres3.8 g
-    Fibres alimentaires4.7 g
-    Protéines11.5 g
-    Sel1 g''')
+    Total glucides25.2 g
+    Sucres3 g
+    Fibres alimentaires6.9 g
+    Protéines7.6 g
+    Sel0.17 g''')
 
-lait_coco = Aliment('Boni Selection Lait de coco 400 ml', '''Énergie kcal167 kcal
-    Total graisses18 g
-    Graisses saturées16 g
-    Total glucides1.8 g
-    Sucres1.8 g
+
+
+# Produits laitiers
+fromage_râpé = Aliment('Everyday Emmental 500 g', '''Énergie kcal286 kcal
+    Total graisses20 g
+    Graisses saturées7.9 g
+    Total glucides0 g
+    Sucres0 g
+    Fibres alimentaires0 g
+    Protéines27 g
+    Sel1.2 g ''')
+
+yaourt_grecque = Aliment("Boni Selection Yaourt à la Grecque entier nature 10 % m.g. 1 kg", '''
+    Énergie kcal121 kcal
+    Total graisses10 g
+    Graisses saturées6.2 g
+    Total glucides4.3 g
+    Sucres3.6 g
+    Fibres alimentaires0 g
+    Protéines3.5 g
+    Sel0.1 g    ''')
+
+
+
+# Graisses
+huile_colza = Aliment('HUILE DE COLZA VDM 15X1L', '''Énergie kcal828 kcal
+    Total graisses92 g
+    Graisses saturées7 g
+    Total glucides0 g
+    Sucres0 g
     Fibres alimentaires0 g
     Protéines0 g
-    Sel0.08 g''')
-
-farine = Aliment('Everyday Farine de blé pour préparations variées 1 kg', '''Énergie kcal348 kcal
-    Total graisses1.1 g
-    Graisses saturées0.2 g
-    Total glucides72 g
-    Sucres1.1 g
-    Fibres alimentaires3.5 g
-    Protéines11 g
-    Sel< 0.01 g''')
-
-pâtes = Aliment('Boni Selection Farfalle 500 g', '''Énergie kcal370 kcal
-    Total graisses1.5 g
-    Graisses saturées0.3 g
-    Total glucides75 g
-    Sucres3 g
-    Fibres alimentaires3 g
-    Protéines13 g
-    Sel0.03 g''')
+    Sel0 g''')
 
 huile_olive = Aliment('', '''Énergie kcal900 kcal
     Total graisses100 g
@@ -200,86 +257,47 @@ huile_tournesol = Aliment('Boni Selection Bio Huile de tournesol 75 cl', '''Éne
     Protéines0 g
     Sel0 g''')
 
-huile_colza = Aliment('HUILE DE COLZA VDM 15X1L', '''Énergie kcal828 kcal
-    Total graisses92 g
-    Graisses saturées7 g
-    Total glucides0 g
-    Sucres0 g
-    Fibres alimentaires0 g
-    Protéines0 g
-    Sel0 g''')
 
-riz = Aliment('Boni Selection Riz basmati parfumé - ne colle pas 4 sachets-cuisson 500 g', '''Énergie kcal349 kcal
-    Total graisses0.8 g
-    Graisses saturées0.2 g
-    Total glucides77 g
-    Sucres< 0.5 g
-    Fibres alimentaires1.1 g
-    Protéines5 g
-    Sel0.03 g ''')
 
-sauce_tomate = Aliment('Base tomatée pour pizza Elvea Tetra 250g', '''Énergie kcal36 kcal
-    Total graisses0.2 g
-    Graisses saturées0 g
-    Total glucides5.2 g
-    Sucres4.5 g
-    Fibres alimentaires3 g
-    Protéines1.9 g
-    Sel0.38 g''')
+# Viandes
 
-fromage_râpé = Aliment('Everyday Emmental 500 g', '''Énergie kcal286 kcal
-    Total graisses20 g
-    Graisses saturées7.9 g
-    Total glucides0 g
-    Sucres0 g
-    Fibres alimentaires0 g
-    Protéines27 g
-    Sel1.2 g ''')
 
-avocat = Aliment('Boni Selection Avocats 5 pièces ± 750 g', '''Énergie kcal160 kcal
+
+# Produits de la mer
+
+
+
+# Sucreries/autres
+kelloggs = Aliment("Kellogg's EXTRA Milk Chocolate 500g", '''Énergie kcal484 kcal
+    Total graisses22 g
+    Graisses saturées12 g
+    Total glucides62 g
+    Sucres25 g
+    Fibres alimentaires4.9 g
+    Protéines7 g
+    Sel0.68 g''')
+
+vermicelles_chocolat = Aliment("Boni Selection Vermicelles chocolat noir 600 g", '''
+    Énergie kcal446 kcal
     Total graisses15 g
-    Graisses saturées2.1 g
-    Total glucides9 g
-    Sucres0.7 g
-    Fibres alimentaires7 g
-    Protéines2 g
-    Sel0 g ''')
+    Graisses saturées9 g
+    Total glucides69 g
+    Sucres66 g
+    Fibres alimentaires6.3 g
+    Protéines4.8 g
+    Sel0.35 g
+    ''')
 
-patate_douce = Aliment('BONI patate douce (vrac)', '''Énergie kcal86 kcal
-    Total graisses0.1 g
-    Graisses saturées0 g
-    Total glucides20 g
-    Sucres4.2 g
-    Fibres alimentaires3 g
-    Protéines1.6 g
-    Sel0 g ''')
+whey = Aliment("Decathlon WHEY PROTEINE ISOLATE CHOCO 900G", '''Énergie kcal377 kcal
+    Total graisses3.8 g
+    Graisses saturées2.2 g
+    Total glucides5 g
+    Sucres3.3 g
+    Fibres alimentaires1.3 g
+    Protéines80 g
+    Sel1.1 g''')
 
-pois_chiches = Aliment('BIOITALIA Pois chiches biologiques', ''' Énergie kcal163 kcal
-    Total graisses2 g
-    Graisses saturées0.2 g
-    Total glucides25.2 g
-    Sucres3 g
-    Fibres alimentaires6.9 g
-    Protéines7.6 g
-    Sel0.17 g''')
 
-tomates_en_morceaux = Aliment('Boni Selection Tomates concassées 400 g', '''Énergie kcal33 kcal
-    Total graisses0 g
-    Graisses saturées0 g
-    Total glucides5.3 g
-    Sucres4.3 g
-    Fibres alimentaires2.1 g
-    Protéines1.9 g
-    Sel0.02 g''')
-
-tomates_en_morceaux = Aliment('Boni Selection Tomates concassées 400 g', '''Énergie kcal33 kcal
-    Total graisses0 g
-    Graisses saturées0 g
-    Total glucides5.3 g
-    Sucres4.3 g
-    Fibres alimentaires2.1 g
-    Protéines1.9 g
-    Sel0.02 g''')
 
 #endregion
 
@@ -375,7 +393,10 @@ Curry_de_pois_chiches_et_patates_douces.ingredients({huile_tournesol: 7.5, patat
 Curry_de_pois_chiches_et_patates_douces.liste_ingrédients("""cfr HelloFresh""")
 Curry_de_pois_chiches_et_patates_douces.préparation("""  cfr HelloFresh  """)
 
-
+Chakchouka = Recette('Chakchouka')
+Chakchouka.ingredients({haricots_blancs: 200, patate_douce: 150, oignons: 50, pois_chiches: 200, tomates_en_morceaux: 200, lait_coco: 125, riz: 85})
+Chakchouka.liste_ingrédients("""cfr HelloFresh""")
+Chakchouka.préparation("""  cfr HelloFresh  """)
 
 #endregion
 
