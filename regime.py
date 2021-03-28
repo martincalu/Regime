@@ -155,15 +155,6 @@ chapelure = Aliment('Everyday Chapelure 400 g', '''Énergie kcal349 kcal
     Protéines11.5 g
     Sel1 g''')
 
-huile_colza = Aliment('HUILE DE COLZA VDM 15X1L', '''Énergie kcal828 kcal
-    Total graisses92 g
-    Graisses saturées7 g
-    Total glucides0 g
-    Sucres0 g
-    Fibres alimentaires0 g
-    Protéines0 g
-    Sel0 g''')
-
 lait_coco = Aliment('Boni Selection Lait de coco 400 ml', '''Énergie kcal167 kcal
     Total graisses18 g
     Graisses saturées16 g
@@ -200,6 +191,24 @@ huile_olive = Aliment('', '''Énergie kcal900 kcal
     Protéines0 g
     Sel0 g ''')
 
+huile_tournesol = Aliment('Boni Selection Bio Huile de tournesol 75 cl', '''Énergie kcal900 kcal
+    Total graisses100 g
+    Graisses saturées12 g
+    Total glucides0 g
+    Sucres0 g
+    Fibres alimentaires0 g
+    Protéines0 g
+    Sel0 g''')
+
+huile_colza = Aliment('HUILE DE COLZA VDM 15X1L', '''Énergie kcal828 kcal
+    Total graisses92 g
+    Graisses saturées7 g
+    Total glucides0 g
+    Sucres0 g
+    Fibres alimentaires0 g
+    Protéines0 g
+    Sel0 g''')
+
 riz = Aliment('Boni Selection Riz basmati parfumé - ne colle pas 4 sachets-cuisson 500 g', '''Énergie kcal349 kcal
     Total graisses0.8 g
     Graisses saturées0.2 g
@@ -235,6 +244,42 @@ avocat = Aliment('Boni Selection Avocats 5 pièces ± 750 g', '''Énergie kcal16
     Fibres alimentaires7 g
     Protéines2 g
     Sel0 g ''')
+
+patate_douce = Aliment('BONI patate douce (vrac)', '''Énergie kcal86 kcal
+    Total graisses0.1 g
+    Graisses saturées0 g
+    Total glucides20 g
+    Sucres4.2 g
+    Fibres alimentaires3 g
+    Protéines1.6 g
+    Sel0 g ''')
+
+pois_chiches = Aliment('BIOITALIA Pois chiches biologiques', ''' Énergie kcal163 kcal
+    Total graisses2 g
+    Graisses saturées0.2 g
+    Total glucides25.2 g
+    Sucres3 g
+    Fibres alimentaires6.9 g
+    Protéines7.6 g
+    Sel0.17 g''')
+
+tomates_en_morceaux = Aliment('Boni Selection Tomates concassées 400 g', '''Énergie kcal33 kcal
+    Total graisses0 g
+    Graisses saturées0 g
+    Total glucides5.3 g
+    Sucres4.3 g
+    Fibres alimentaires2.1 g
+    Protéines1.9 g
+    Sel0.02 g''')
+
+tomates_en_morceaux = Aliment('Boni Selection Tomates concassées 400 g', '''Énergie kcal33 kcal
+    Total graisses0 g
+    Graisses saturées0 g
+    Total glucides5.3 g
+    Sucres4.3 g
+    Fibres alimentaires2.1 g
+    Protéines1.9 g
+    Sel0.02 g''')
 
 #endregion
 
@@ -325,6 +370,13 @@ One_Pot_Enchilada_Rice.préparation("""
     Enjoy! 
  """)
 
+Curry_de_pois_chiches_et_patates_douces = Recette('Curry de pois chiches et patates douces')
+Curry_de_pois_chiches_et_patates_douces.ingredients({huile_tournesol: 7.5, patate_douce: 150, oignons: 50, pois_chiches: 200, tomates_en_morceaux: 200, lait_coco: 125, riz: 85})
+Curry_de_pois_chiches_et_patates_douces.liste_ingrédients("""cfr HelloFresh""")
+Curry_de_pois_chiches_et_patates_douces.préparation("""  cfr HelloFresh  """)
+
+
+
 #endregion
 
 #region Lundi
@@ -401,7 +453,7 @@ ajouter_aliment(jour, repas, whey, 30)
 #Autre idée??? Cfr Pilou...
 
 repas = "Souper"
-One_Pot_Vegan_Swedish_Meatball_Pasta.ajouter_ingredients(3)
+Curry_de_pois_chiches_et_patates_douces.ajouter_ingredients(2)
 
 #endregion
 
@@ -509,7 +561,7 @@ One_Pot_Vegan_Swedish_Meatball_Pasta.ajouter_ingredients(3)
 
 #endregion
 
-liste_jours = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Sendredi', 'Samedi', 'Dimanche']
+liste_jours = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
 liste_repas = ['Déjeuner', 'Collation', 'Dîner', 'Goûter', 'Souper']
 liste_infos_nutr = ['Energie', 'Total graisses', 'Graisses saturées', 'Total glucides', 'Sucres', 'Fibres alimentaires', 'Protéines', 'Sel']
 
@@ -528,7 +580,7 @@ tableaux_par_jour = []
 for jour in liste_jours: 
     tableaux_par_jour.append(régime[régime['Jour'] == jour]) 
 
-def obtenir_les_infos_nutritionnelles():
+def obtenir_les_infos_nutritionnelles_par_repas():
     jour = input("Quel jour sommes-nous?").lower().capitalize()
     while not jour in liste_jours:
         jour = input("Entre un jour valide: ")
@@ -549,4 +601,23 @@ def obtenir_les_infos_nutritionnelles():
     else:
         print("Tu auras {} g de {} pour le {} du {}".format(str(tableaux_par_jour[index_jour][tableaux_par_jour[index_jour]['Repas'] == repas][info_nutr].sum()), info_nutr.lower(), repas.lower(), jour.lower()))
 
-obtenir_les_infos_nutritionnelles()
+def obtenir_les_infos_nutritionnelles_par_jour():
+    jour = input("Quel jour sommes-nous?").lower().capitalize()
+    while not jour in liste_jours:
+        jour = input("Entre un jour valide: ")
+    index_jour = liste_jours.index(jour)
+
+    info_nutr = input("""Quelle information nutritionnelle veux-tu avoir?
+    Entre 'Energie', 'Total graisses', 'Graisses saturées', 'Total glucides', 'Sucres', 'Fibres alimentaires', 'Protéines', ou 'Sel'
+    """).lower().capitalize()
+    while not info_nutr in liste_infos_nutr:
+        info_nutr = input("Entre un item valide: ")
+
+    if info_nutr == 'Energie':
+        print("Tu auras {} kcal le {}".format(str(tableaux_par_jour[index_jour][info_nutr].sum()), jour.lower()))
+    else:
+        print("Tu auras {} g de {} le {}".format(str(tableaux_par_jour[index_jour][info_nutr].sum()), info_nutr.lower(), jour.lower()))
+
+#obtenir_les_infos_nutritionnelles_par_repas()
+
+
