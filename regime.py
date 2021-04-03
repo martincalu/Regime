@@ -109,6 +109,15 @@ tortilla_chips = Aliment('Boni Selection Original chips 200 g', '''Énergie kcal
     Sel0.9 g''')
 
 # Fruits et légumes
+abricot = Aliment("Abricot 45g", '''Énergie kcal45 kcal
+    Total graisses0 g
+    Graisses saturées0 g
+    Total glucides9 g
+    Sucres6.7 g
+    Fibres alimentaires1.7 g
+    Protéines0 g
+    Sel< 0.01 g''')
+
 amandes = Aliment("Boni Selection Amandes 250 g", '''Énergie kcal592 kcal
     Total graisses49 g
     Graisses saturées3.7 g
@@ -126,6 +135,24 @@ avocat = Aliment('Boni Selection Avocats 5 pièces ± 750 g', '''Énergie kcal16
     Fibres alimentaires7 g
     Protéines2 g
     Sel0 g ''')
+
+banane = Aliment('Bananes', '''Énergie kcal89 kcal
+    Total graisses0.3 g
+    Graisses saturées0.1 g
+    Total glucides23 g
+    Sucres12 g
+    Fibres alimentaires2.6 g
+    Protéines1.1 g
+    Sel0 g ''')
+
+citron = Aliment('Citron', '''Énergie kcal27 kcal
+    Total graisses0 g
+    Graisses saturées0 g
+    Total glucides1.6 g
+    Sucres0.8 g
+    Fibres alimentaires0 g
+    Protéines0 g
+    Sel0 g''')
 
 champignons = Aliment('Boni Selection - Champignons - 100 pourcents culture belge - 300 g', '''
     Énergie kcal19 kcal
@@ -146,23 +173,23 @@ lait_coco = Aliment('Boni Selection Lait de coco 400 ml', '''Énergie kcal167 kc
     Protéines0 g
     Sel0.08 g''')
 
-poivron = Aliment('poivrons rouges', '''Énergie kcal35 kcal
+mandarine = Aliment('Mandarine', '''Énergie kcal47 kcal
     Total graisses0 g
     Graisses saturées0 g
-    Total glucides6 g
-    Sucres4.8 g
-    Fibres alimentaires3.2 g
+    Total glucides9.2 g
+    Sucres8.6 g
+    Fibres alimentaires1.7 g
     Protéines1 g
     Sel0 g''')
 
-oignons = Aliment('Boni Selection Oignons 2,5 kg', '''Énergie kcal40 kcal
-    Total graisses0.1 g
-    Graisses saturées< 0 g
-    Total glucides9 g
-    Sucres4.2 g
-    Fibres alimentaires1.7 g
-    Protéines1.1 g
-    Sel0 g''')
+nectar_abricot = Aliment("Nectar d'abricot CARREFOUR SELECTION ", '''Énergie kcal47 kcal
+    Total graisses0 g
+    Graisses saturées0 g
+    Total glucides11 g
+    Sucres10 g
+    Fibres alimentaires0.5 g
+    Protéines0 g
+    Sel< 0.01 g''')
 
 noix = Aliment("Boni Selection Cerneaux de noix 200 g", '''Énergie kcal689 kcal
     Total graisses65 g
@@ -198,6 +225,24 @@ noix_de_pécan = Aliment("Boni Selection Noix de pécan grillées 200 g", '''Én
     Fibres alimentaires9.4 g
     Protéines9.5 g
     Sel< 0.01 g''')
+
+oignons = Aliment('Boni Selection Oignons 2,5 kg', '''Énergie kcal40 kcal
+    Total graisses0.1 g
+    Graisses saturées< 0 g
+    Total glucides9 g
+    Sucres4.2 g
+    Fibres alimentaires1.7 g
+    Protéines1.1 g
+    Sel0 g''')
+
+poivron = Aliment('poivrons rouges', '''Énergie kcal35 kcal
+    Total graisses0 g
+    Graisses saturées0 g
+    Total glucides6 g
+    Sucres4.8 g
+    Fibres alimentaires3.2 g
+    Protéines1 g
+    Sel0 g''')
 
 sauce_tomate = Aliment('Base tomatée pour pizza Elvea Tetra 250g', '''Énergie kcal36 kcal
     Total graisses0.2 g
@@ -304,9 +349,27 @@ yaourt_grecque = Aliment("Boni Selection Yaourt à la Grecque entier nature 10 %
     Protéines3.5 g
     Sel0.1 g    ''')
 
+yaourt_vanille = Aliment("Boni Selection Yaourt à la Grecque vanille 4 pièces 600 g", '''
+    Énergie kcal126 kcal
+    Total graisses7.3 g
+    Graisses saturées4.7 g
+    Total glucides13 g
+    Sucres12 g
+    Fibres alimentaires0 g
+    Protéines2.5 g
+    Sel0.1 g''')
 
 
 # Graisses
+beurre_amandes = Aliment("Delhaize 100 beurre d'amandes", '''Énergie kcal630 kcal
+    Total graisses53 g
+    Graisses saturées4.4 g
+    Total glucides6.2 g
+    Sucres4 g
+    Fibres alimentaires8.6 g
+    Protéines27 g
+    Sel0 g''')
+
 huile_colza = Aliment('HUILE DE COLZA VDM 15X1L', '''Énergie kcal828 kcal
     Total graisses92 g
     Graisses saturées7 g
@@ -316,7 +379,7 @@ huile_colza = Aliment('HUILE DE COLZA VDM 15X1L', '''Énergie kcal828 kcal
     Protéines0 g
     Sel0 g''')
 
-huile_olive = Aliment('', '''Énergie kcal900 kcal
+huile_olive = Aliment('Huile Olive', '''Énergie kcal900 kcal
     Total graisses100 g
     Graisses saturées14 g
     Total glucides0 g
@@ -353,6 +416,14 @@ kelloggs = Aliment("Kellogg's EXTRA Milk Chocolate 500g", '''Énergie kcal484 kc
     Fibres alimentaires4.9 g
     Protéines7 g
     Sel0.68 g''')
+
+miel = Aliment("Miel", '''Énergie kcal320 kcal
+    Total graisses0.1 g
+    Graisses saturées0 g
+    Total glucides79.3 g
+    Sucres79.3 g
+    Protéines0.5 g
+    Sel0.015 g''')
 
 oeuf = Aliment("Boni Selection Bio Oeufs de poules élevées en plein air L 6 pièces", '''Énergie kcal155 kcal
     Total graisses11 g
@@ -496,6 +567,45 @@ Riz_jaune_et_curry_dépinards.préparation("""  cfr HelloFresh  """)
 
 #endregion
 
+#region Smoothies
+
+smoothie_banana = Recette("Smoothie banana")
+smoothie_banana.ingredients({banane: 240, yaourt_vanille: 300, miel: 10})
+smoothie_banana.liste_ingrédients("""cfr feuille 1""")
+smoothie_banana.préparation("""cfr feuille 1""")
+
+smoothie_tangerine_honey = Recette("Smoothie tangerine-honey")
+smoothie_tangerine_honey.ingredients({mandarine: 200, citron: 240, miel: 60})
+smoothie_tangerine_honey.liste_ingrédients("""cfr feuille 13""")
+smoothie_tangerine_honey.préparation("""cfr feuille 13""")
+
+smoothie_apricot_almond = Recette("Smoothie apricot-almond")
+smoothie_apricot_almond.ingredients({nectar_abricot: 360, yaourt_vanille: 120, beurre_amandes: 30})
+smoothie_apricot_almond.liste_ingrédients("""cfr feuille 14""")
+smoothie_apricot_almond.préparation("""cfr feuille 14""")
+
+smoothie_banana = Recette("Smoothie banana")
+smoothie_banana.ingredients({banane: 240, yaourt_vanille: 300, miel: 10})
+smoothie_banana.liste_ingrédients("""cfr feuille 17""")
+smoothie_banana.préparation("""cfr feuille 17""")
+
+smoothie_banana = Recette("Smoothie banana")
+smoothie_banana.ingredients({banane: 240, yaourt_vanille: 300, miel: 10})
+smoothie_banana.liste_ingrédients("""cfr feuille 34""")
+smoothie_banana.préparation("""cfr feuille 34""")
+
+smoothie_banana = Recette("Smoothie banana")
+smoothie_banana.ingredients({banane: 240, yaourt_vanille: 300, miel: 10})
+smoothie_banana.liste_ingrédients("""cfr feuille 38""")
+smoothie_banana.préparation("""cfr feuille 38""")
+
+smoothie_banana = Recette("Smoothie banana")
+smoothie_banana.ingredients({banane: 240, yaourt_vanille: 300, miel: 10})
+smoothie_banana.liste_ingrédients("""cfr feuille 40""")
+smoothie_banana.préparation("""cfr feuille 40""")
+
+#endregion
+
 #region Lundi
 jour = "Lundi"
 
@@ -512,14 +622,14 @@ repas = "Collation"
 # Jus de fruits à déterminer
 
 repas = "Dîner"
-One_Pot_Vegan_Swedish_Meatball_Pasta.ajouter_ingredients(3)
+One_Pot_Vegan_Swedish_Meatball_Pasta.ajouter_ingredients(2)
 
 repas = "Goûter"
 ajouter_aliment(jour, repas, whey, 30)
 #Autre idée??? Cfr Pilou...
 
 repas = "Souper"
-One_Pot_Vegan_Swedish_Meatball_Pasta.ajouter_ingredients(3)
+One_Pot_Vegan_Swedish_Meatball_Pasta.ajouter_ingredients(2)
 
 #endregion
 
@@ -539,14 +649,14 @@ repas = "Collation"
 # Jus de fruits à déterminer
 
 repas = "Dîner"
-One_Pot_Enchilada_Rice.ajouter_ingredients(3)
+One_Pot_Enchilada_Rice.ajouter_ingredients(1)
 
 repas = "Goûter"
 ajouter_aliment(jour, repas, whey, 30)
 #Autre idée??? Cfr Pilou...
 
 repas = "Souper"
-One_Pot_Enchilada_Rice.ajouter_ingredients(3)
+One_Pot_Enchilada_Rice.ajouter_ingredients(2)
 
 #endregion
 
@@ -566,7 +676,7 @@ repas = "Collation"
 # Jus de fruits à déterminer
 
 repas = "Dîner"
-Curry_de_pois_chiches_et_patates_douces.ajouter_ingredients(1)
+Curry_de_pois_chiches_et_patates_douces.ajouter_ingredients(0.5)
 
 repas = "Goûter"
 ajouter_aliment(jour, repas, whey, 30)
@@ -593,7 +703,7 @@ repas = "Collation"
 # Jus de fruits à déterminer
 
 repas = "Dîner"
-Chakchouka.ajouter_ingredients(1)
+Chakchouka.ajouter_ingredients(0.5)
 
 repas = "Goûter"
 ajouter_aliment(jour, repas, whey, 30)
@@ -620,7 +730,7 @@ repas = "Collation"
 # Jus de fruits à déterminer
 
 repas = "Dîner"
-Dahl.ajouter_ingredients(1)
+Dahl.ajouter_ingredients(0.5)
 
 repas = "Goûter"
 ajouter_aliment(jour, repas, whey, 30)
@@ -674,13 +784,14 @@ repas = "Collation"
 # Jus de fruits à déterminer
 
 repas = "Dîner"
+One_Pot_Vegan_Swedish_Meatball_Pasta.ajouter_ingredients(2)
 
 repas = "Goûter"
 ajouter_aliment(jour, repas, whey, 30)
 #Autre idée??? Cfr Pilou...
 
 repas = "Souper"
-One_Pot_Vegan_Swedish_Meatball_Pasta.ajouter_ingredients(3)
+One_Pot_Vegan_Swedish_Meatball_Pasta.ajouter_ingredients(2)
 
 #endregion
 
@@ -702,6 +813,10 @@ print(régime)
 tableaux_par_jour = []
 for jour in liste_jours: 
     tableaux_par_jour.append(régime[régime['Jour'] == jour]) 
+
+liste_courses = régime.groupby('Aliment').sum()
+print(liste_courses)
+
 
 def obtenir_les_infos_nutritionnelles():
     type_info = int(input("""Veux-tu connaître les informations nutritionnelles par 1) jour ou 2) repas?
@@ -752,6 +867,15 @@ def obtenir_les_infos_nutritionnelles_par_jour():
     else:
         print("Tu auras {} g de {} le {}".format(str(tableaux_par_jour[index_jour][info_nutr].sum()), info_nutr.lower(), jour.lower()))
 
-obtenir_les_infos_nutritionnelles()
+#obtenir_les_infos_nutritionnelles()
+
+#régime.to_excel(r'..\..\régime.xlsx', index = False)
+
+for i in tableaux_par_jour:
+    print(i['Jour'].head(1))
+    print(i['Protéines'].sum())
+    print(i['Energie'].sum())
+    
+
 
 
